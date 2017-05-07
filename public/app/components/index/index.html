@@ -1,0 +1,26 @@
+<div style="
+position:fixed;top:0;left:0;z-index: 1;
+background: #000;
+color: #fff;
+">
+目前有{{count}}人
+</div>
+<div id="msg_list" style="width:100%;position:absolute;height:80%;top:0;overflow-y: scroll;" >
+	<div class="msg_item"
+	style="padding:10px;"
+	ng-repeat="item in list track by $index" >
+	{{item}}
+	</div>
+</div>
+<div style="width:100%;position:absolute;height:20%;bottom:0;" >
+	<textarea 
+	style="vertical-align: middle;"
+	placeholder="enter輸入"
+	ng-model="msg"
+	></textarea>
+	<button 
+	ng-click="send();msg=''"
+	class="btn btn-primary btn-lg"
+	>送出</button>
+	
+</div>

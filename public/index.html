@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>陌生人聊天室</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="/js/angular1.6.4.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/app/app.js"></script>
+	<script src="/app/components/index/index.js"></script>
+	<link rel="stylesheet" href="/css/bootstrap.min.css" />
+	<style>
+	.msg_item:nth-child(odd){
+		background:#eee;
+	}
+	*{
+		font-size:25px!important;
+	}
+	</style>
+</head>
+<body ng-app="app" >
+	<index></index>
+</body>
+</html>
